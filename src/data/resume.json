@@ -1,0 +1,116 @@
+{
+  "personalInfo": {
+    "name": "Ted Middleton",
+    "title": "Senior Software Engineer",
+    "email": "ted@eloquentsoft.com",
+    "phone": "(604) 808-9864",
+    "location": "Vancouver, British Columbia, Canada",
+    "summary": "I write great application software that solves problems."
+  },
+  "experience": [
+    {
+      "title": "Software Engineer",
+      "company": "Sanas.ai",
+      "location": "Palo Alto, California",
+      "startDate": "2024-03",
+      "endDate": "2024-08",
+      "description": "Developed an audio driver to interface Sanas.ai's audio accent-changing neural network with other software. This audio driver needed to perform transparently in the Windows kernel and work in challenging audio-streaming environments like with virtual desktop interfaces."
+    },
+    {
+      "title": "Software Engineer",
+      "company": "NDT Solutions",
+      "location": "New Richmond, Wisconsin",
+      "startDate": "2023-12",
+      "endDate": "2023-10",
+      "description": "I was lending my Qt expertise scoping-out a project for an app that would unify collection and visualization of non-destructive testing data. This testing data is collected from eddy current and ultrasonic scanners used in the aerospace industry."
+    },
+    {
+      "title": "Software Engineer",
+      "company": "SHOWRUNNER, by Integrated Cinematics",
+      "location": "Chicago, Illinois",
+      "startDate": "2022-08",
+      "endDate": "2023-10",
+      "description": "Showrunner by Integrated Cinematics is an Unreal Engine application that unifies movie studio lighting and camera settings with Unreal Engine scene objects used in LED light wall studios. I wrote the Unreal Engine plugin that got the company to our first customer rollout."
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Alteryx",
+      "location": "Broomfield, Colorado",
+      "startDate": "2021-03",
+      "endDate": "2022-07",
+      "description": "Alteryx Designer is the most popular desktop application for Business Intelligence data science analysis. My team was responsible for building new data connectors for everything from Excel to AWS S3 buckets."
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Microsoft (The Coalition)",
+      "location": "Burnaby, British Columbia, Canada",
+      "startDate": "2020-05",
+      "endDate": "2021-02",
+      "description": "Worked on Gears of War 5, concentrating on front end and low-level Unreal Engine issues."
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Arista Networks",
+      "location": "Burnaby, British Columbia, Canada",
+      "startDate": "2017-03",
+      "endDate": "2019-11",
+      "description": "Built data visualization and metrics tools for data center network switches used by cloud datacenter operators like Google and Microsoft."
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Teradici",
+      "location": "Burnaby, British Columbia, Canada",
+      "startDate": "2011-05",
+      "endDate": "2017-02",
+      "description": "Built a tightly-optimized DSP hardware remote desktop client using wavelet video compression as well as Windows and Mac remote desktop clients that formed the backbone of the AWS Workspaces clients."
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Slant Six Games",
+      "location": "Vancouver, British Columbia, Canada",
+      "startDate": "2005-03",
+      "endDate": "2010-04",
+      "description": "As one of the studio's first programmers, I worked on and my code was used in four triple-A video games on PSP and PS3. While I probably touched just about every system in multiple game engines here, I specialized in gameplay network architecture and UI architecture."
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Electronic Arts",
+      "location": "Burnaby, British Columbia, Canada",
+      "startDate": "2002-02",
+      "endDate": "2005-03",
+      "description": "As a software engineer at Electronic Arts Canada, I worked as a tools and systems engineer for 007: Agent Under Fire, 007: Nightfire, 007: Everything or Nothing, Need For Speed: Underground 2, and FIFA 2006"
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bsc, Computing Science",
+      "institution": "University of Alberta",
+      "location": "Edmonton, Alberta, Canada",
+      "graduationDate": "2002-04",
+      "startDate": "1997-09",
+      "description": ""
+    },
+    {
+      "degree": "Bsc, Physics",
+      "institution": "University of Alberta",
+      "location": "Edmonton, Alberta, Canada",
+      "graduationDate": "1997-04",
+      "startDate": "1993-09",
+      "description": ""
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certification Name",
+      "issuer": "Issuing Organization",
+      "dateObtained": "YYYY-MM",
+      "expirationDate": "YYYY-MM",
+      "description": "Brief description or additional details"
+    }
+  ],
+  "skills": [
+    "Skill 1",
+    "Skill 2",
+    "Skill 3"
+  ]
+}
