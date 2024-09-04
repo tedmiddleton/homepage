@@ -9,6 +9,7 @@ module.exports = {
     siteUrl: `https://www.yourdomain.tld`,
   },
   plugins: [
+      `gatsby-plugin-postcss`,
       `gatsby-transformer-json`,
       {
           resolve: `gatsby-source-filesystem`,
