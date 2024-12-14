@@ -1,25 +1,45 @@
-import React, { useRef, useEffect } from 'react'
+import React, { useRef, useEffect, useState } from 'react'
 import Sidebar from './Sidebar'
 
 const Layout = ({ children }) => {
   const mainContentRef = useRef(null);
-  const [activeSection, setActiveSection] = React.useState('about');
+  const [activeSection, setActiveSection] = useState('about');
 
   const handleScroll = () => {
     const scrollPosition = mainContentRef.current.scrollTop;
-    const sections = mainContentRef.current.querySelectorAll('section');
+    const viewportHeight = mainContentRef.current.clientHeight;
+    const scrollHeight = mainContentRef.current.scrollHeight;
 
-    for (let i = sections.length - 1; i >= 0; i--) {
-      if (sections[i].offsetTop <= scrollPosition + 100) {
-        setActiveSection(sections[i].id);
-        break;
+    const sections = mainContentRef.current.querySelectorAll('section');
+    let newActiveSection = activeSection;
+
+    // Check if we're at the bottom of the page
+    if (scrollPosition + viewportHeight >= scrollHeight - 20) {
+      newActiveSection = sections[sections.length - 1].id;
+    } else {
+      for (let i = 0; i < sections.length; i++) {
+        const section = sections[i];
+        const sectionTop = section.offsetTop - scrollPosition;
+        const sectionBottom = sectionTop + section.offsetHeight;
+
+        // If the section is in view
+        if (sectionTop < viewportHeight / 2 && sectionBottom > viewportHeight / 2) {
+          newActiveSection = section.id;
+          break;
+        }
       }
+    }
+
+    if (newActiveSection !== activeSection) {
+      setActiveSection(newActiveSection);
     }
   };
 
   useEffect(() => {
     const mainContent = mainContentRef.current;
     mainContent.addEventListener('scroll', handleScroll);
+    // Initial check
+    handleScroll();
     return () => mainContent.removeEventListener('scroll', handleScroll);
   }, []);
 
